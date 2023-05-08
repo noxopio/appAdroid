@@ -107,17 +107,11 @@
             android:src="@drawable/ic_launcher_foreground"
             />
 
-        <TextView
-            android:id="@+id/title1"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:textColor="@color/back_button"
-            android:text="{+-*/}"
-            android:textSize="40dp"
-            android:visibility="visible" />
-
-
-
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/icon" />
 
         <TextView
             android:id="@+id/title2"
@@ -125,12 +119,11 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:textColor="@color/back_button"
-            android:text="{@nox.opio}"
+            android:text="{@noxopio}"
             android:textSize="12dp"
-            android:visibility="visible" />
+            android:visibility="visible"
 
-
-
+            />
 
 
     </LinearLayout>
