@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             else{
             val n1:Double=(number_1.text.toString().toDouble())
             val n2:Double=(number_2.text.toString().toDouble())
-    resultado.setText("Total : " + division(n1,n2))
+    resultado.setText("" + division(n1,n2))
     number_1.clearFocus()
     number_2.clearFocus() }
             }

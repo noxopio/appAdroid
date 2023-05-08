@@ -36,10 +36,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/back_button"
-            android:textColor="@color/black"
-            android:text="@string/button_suma"
+            android:focusableInTouchMode="true"
 
-            />
+            android:text="@string/button_suma"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/button_resta"
@@ -74,12 +74,11 @@
         <TextView
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="1dp"
-            android:hint="="
             android:textColor="#CE02FF0F"
-            android:textSize="30dp"
-            android:visibility="visible" />
+            android:textSize="30dp" />
 
         <EditText
             android:id="@+id/edit_text_1"
