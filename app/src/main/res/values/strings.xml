@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="button_suma">S</string>
+    <string name="button_resta">R</string>
+    <string name="button_multiplicacion">M</string>
+    <string name="button_division">D</string>
+    <string name="empty">INGRESE NUMERO</string>
+
+</resources>
