@@ -115,10 +115,10 @@
             android:text="{+-*/}"
             android:textSize="40dp"
             android:visibility="visible" />
-<<<<<<< HEAD
 
 
-=======
+
+
         <TextView
             android:id="@+id/title2"
             android:layout_marginTop="8dp"
