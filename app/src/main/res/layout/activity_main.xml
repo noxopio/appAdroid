@@ -67,15 +67,7 @@
             android:textColor="@color/black"
             android:text="@string/button_division"
             />
-        <Button
-            android:id="@+id/button_total"
-            android:layout_width="270dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/back_button"
-            android:textColor="@color/black"
-            android:text="TOTAL"
-            />
+
 
         <TextView
             android:id="@+id/text_view"

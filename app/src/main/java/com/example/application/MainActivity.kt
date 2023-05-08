@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         btn_multiplicar = findViewById(R.id.button_multiplicacion)
         btn_dividir = findViewById(R.id.button_division)
         resultado = findViewById(R.id.text_view)
-        btn_total = findViewById(R.id.button_total)
+ //       btn_total = findViewById(R.id.button_total)
 
 
 
@@ -58,12 +58,6 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-            //btu total
-            btn_total.setOnClickListener() {
-
-
-            }
-
 
 
 //Button sumar
@@ -76,13 +70,13 @@ class MainActivity : AppCompatActivity() {
 
                     val n1:Double=(number_1.text.toString().toDouble())
                     val n2:Double=(number_2.text.toString().toDouble())
-                    resultado.setText("SUMA " + sumar(n1, n2))
+                    resultado.setText("SUMA:  " + sumar(n1, n2))
                     number_1.clearFocus()
                     number_2.clearFocus()
 
                     val intent = Intent(this, resulActivity::class.java)
                     val op = resultado.text.toString()
-                    intent.putExtra("operacion", op)
+                    intent.putExtra("suma", op)
                     startActivity(intent)
 
 
@@ -101,10 +95,17 @@ class MainActivity : AppCompatActivity() {
                 else {
 
                    val n1:Double=(number_1.text.toString().toDouble())
-                 val n2:Double=(number_2.text.toString().toDouble())
-                    resultado.setText("Total : " + restar(n1, n2))
+                     val n2:Double=(number_2.text.toString().toDouble())
+                    resultado.setText("RESTA:  " + restar(n1, n2))
                     number_1.clearFocus()
                     number_2.clearFocus()
+
+                    val intent = Intent(this, resulActivity::class.java)
+                    val op = resultado.text.toString()
+                    intent.putExtra("resta", op)
+                    startActivity(intent)
+
+
                 }
             })
 
@@ -118,9 +119,14 @@ class MainActivity : AppCompatActivity() {
                 else {
                    val n1:Double=(number_1.text.toString().toDouble())
                  val n2:Double=(number_2.text.toString().toDouble())
-                    resultado.setText("Total : " + multiplicar(n1, n2))
+                    resultado.setText("MULTIPLICACION:  " + multiplicar(n1, n2))
                     number_1.clearFocus()
                     number_2.clearFocus()
+
+                    val intent = Intent(this, resulActivity::class.java)
+                    val op = resultado.text.toString()
+                    intent.putExtra("multiplicacion", op)
+                    startActivity(intent)
                 }
             })
             //Buton dividir
@@ -133,9 +139,14 @@ class MainActivity : AppCompatActivity() {
                 else {
                   val n1:Double=(number_1.text.toString().toDouble())
                  val n2:Double=(number_2.text.toString().toDouble())
-                    resultado.setText("" + division(n1, n2))
+                    resultado.setText("DIVISION:  " + division(n1, n2))
                     number_1.clearFocus()
                     number_2.clearFocus()
+
+                    val intent = Intent(this, resulActivity::class.java)
+                    val op = resultado.text.toString()
+                    intent.putExtra("division", op)
+                    startActivity(intent)
                 }
             }
             )
